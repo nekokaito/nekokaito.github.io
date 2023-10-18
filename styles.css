@@ -1,40 +1,87 @@
-body
-{ 
-   background-color:black;
-   position: relative;
-   
-
-
+body {
+  background-color: black;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
 }
 
+#particles-js {
+  position: relative;
+  height: 100vh;
+  background-image: url('https://cdn.discordapp.com/attachments/1009856301318287442/1164230277711794206/ui.jpg?ex=654274f0&is=652ffff0&hm=6ec7ecb926f122bc4d65701f9923f972b32926129ea139e393f3a91c4ceee3fb&');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  
+}
 
-body::before{
+#particles-js::before {
   content: '';
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('img/bg.png');
-  background-repeat: no-repeat;
-  background-position: center ;
-  background-attachment: fixed;
-  background-size: cover;
-  filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: -1;
-
+  
 }
 
-
-
-h1{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #ffff;
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ffffff;
 }
 
-i{
+i {
   font-size: 1.8em;
-  color: #ffff;
-  margin:0 5px;
+  color: #ffffff;
+  margin: 0 5px;
+}
+#icon{
+  font-size: 1em;
+  color: #ffffff;
+  margin: 0 5px;
 }
 
+.main-content {
+  width: 90%;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-content {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
